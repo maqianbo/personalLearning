@@ -1,6 +1,6 @@
 <template>
   <div class="page bfh">
-    <h1 class="introduceTitle">模块框使用</h1>
+    <h1 class="introduceTitle">自适应模块框</h1>
     <div class="page-main">
       <el-row type="flex" justify="end">
         <el-button type="primary" @click="dialogVisible = true">打开模块框</el-button>
@@ -40,5 +40,6 @@ export default {
 }
 .myModal .el-dialog__body {
   height: calc(100% - 124px);
+  overflow: hidden;
 }
 </style>

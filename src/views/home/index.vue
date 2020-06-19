@@ -65,6 +65,11 @@ export default {
           title: '模态框使用',
           icon: 'el-icon-s-custom',
           path: '/home/modal'
+        },
+        {
+          title: 'calendar日历插件',
+          icon: 'el-icon-s-custom',
+          path: '/home/calendar'
         }
       ]
     };

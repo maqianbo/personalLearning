@@ -50,6 +50,11 @@ const routes = [{
       path: 'modal',
       name: 'modal',
       component: () => import('@/views/modal/index.vue'),
+    },
+    {
+      path: 'calendar',
+      name: 'calendar',
+      component: () => import('@/views/calendar/index.vue'),
     }
   ]
 },
