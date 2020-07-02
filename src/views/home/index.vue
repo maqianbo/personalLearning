@@ -1,6 +1,6 @@
 <template>
   <div class="page home">
-    <el-row class="title">个人前端知识演示系统</el-row>
+    <el-row class="title">测试test</el-row>
     <div class="page-main home-content">
       <div class="home-left">
         <el-menu
@@ -67,9 +67,80 @@ export default {
           path: '/home/modal'
         },
         {
-          title: 'calendar日历插件',
+          title: 'calendar日历',
           icon: 'el-icon-s-custom',
           path: '/home/calendar'
+        },
+        // {
+        //   title: '组件渲染数据顺序',
+        //   icon: 'el-icon-s-custom',
+        //   // path: '/home/zjXrSx',
+        //   children: [
+        //     {
+        //       title: '组件渲染数据顺序1',
+        //       icon: 'el-icon-s-custom',
+        //       path: '/home/zjXrSx'
+        //     },
+        //     {
+        //       title: '组件渲染数据顺序2',
+        //       icon: 'el-icon-s-custom',
+        //       path: '/home/zjXrSx2'
+        //     }
+        //   ]
+        // },
+        {
+          title: '动画使用',
+          icon: 'el-icon-s-custom',
+          path: '/home/animation/jichu',
+          children: [
+            {
+              title: '基础动画使用',
+              icon: 'el-icon-s-custom',
+              path: '/home/animation/jichu'
+            },
+            {
+              title: '兔子动画使用',
+              icon: 'el-icon-s-custom',
+              path: '/home/animation/tuzi'
+            },
+            {
+              title: '落雨动画使用',
+              icon: 'el-icon-s-custom',
+              path: '/home/animation/luoyu'
+            }
+          ]
+        },
+        {
+          title: '导出打印',
+          icon: 'el-icon-s-custom',
+          path: '/home/excel/daochu',
+          children: [
+            {
+              title: '导出功能使用',
+              icon: 'el-icon-s-custom',
+              path: '/home/excel/daochu'
+            },
+            {
+              title: '打印功能使用',
+              icon: 'el-icon-s-custom',
+              path: '/home/excel/dayin'
+            }
+          ]
+        },
+        {
+          title: 'css阴影学习',
+          icon: 'el-icon-s-custom',
+          path: '/home/shadow'
+        },
+        {
+          title: '工具条使用',
+          icon: 'el-icon-s-custom',
+          path: '/home/toolBar'
+        },
+        {
+          title: '全屏使用',
+          icon: 'el-icon-s-custom',
+          path: '/home/fullScreen'
         }
       ]
     };
@@ -92,6 +163,8 @@ export default {
   .home-left {
     width: 200px;
     background: #333743;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .home-right {
     // margin-left: 200px;

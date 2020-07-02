@@ -14,8 +14,12 @@ Vue.config.productionTip = false
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import Print from '@/utils/print.js'
+
+
 
 Vue.use(ElementUI);
+Vue.use(Print);
 
 import '@/styles/index.scss' //全局样式
 

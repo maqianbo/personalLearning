@@ -55,7 +55,76 @@ const routes = [{
       path: 'calendar',
       name: 'calendar',
       component: () => import('@/views/calendar/index.vue'),
-    }
+    },
+    {
+      path: 'zjXrSx',//组件渲染顺序1
+      name: 'zjXrSx',
+      component: () => import('@/views/zjXrSx/index.vue'),
+    },
+    {
+      path: 'zjXrSx2',//组件渲染顺序2   keepAlive
+      name: 'zjXrSx2',
+      component: () => import('@/views/zjXrSx/zjXrSx2.vue'),
+      meta: {
+        keepAlive: true
+      }
+    },
+    {
+      path: 'animation',//组件渲染顺序2   keepAlive
+      name: 'animation',
+      component: () => import('@/views/animation/index.vue'),
+      redirect: '/home/animation/jichu',
+      children: [
+        {
+          path: 'jichu',//组件渲染顺序2   keepAlive
+          name: 'jichu',
+          component: () => import('@/views/animation/jichu.vue'),
+        },
+        {
+          path: 'tuzi',//组件渲染顺序2   keepAlive
+          name: 'tuzi',
+          component: () => import('@/views/animation/tuzi.vue'),
+        },
+        {
+          path: 'luoyu',//组件渲染顺序2   keepAlive
+          name: 'luoyu',
+          component: () => import('@/views/animation/luoyu.vue'),
+        }
+      ]
+    },
+    {
+      path: 'excel',
+      name: 'excel',
+      component: () => import('@/views/excel/index.vue'),
+      redirect: '/home/excel/daochu',
+      children: [
+        {
+          path: 'daochu',
+          name: 'daochu',
+          component: () => import('@/views/excel/daochu.vue'),
+        },
+        {
+          path: 'dayin',
+          name: 'dayin',
+          component: () => import('@/views/excel/dayin.vue'),
+        },
+      ]
+    },
+    {
+      path: 'shadow',
+      name: 'shadow',
+      component: () => import('@/views/shadow/index.vue'),
+    },
+    {
+      path: 'toolBar',
+      name: 'toolBar',
+      component: () => import('@/views/toolBar/index.vue'),
+    },
+    {
+      path: 'fullScreen',
+      name: 'fullScreen',
+      component: () => import('@/views/fullScreen/index.vue'),
+    },
   ]
 },
 ]
